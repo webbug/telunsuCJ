@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>特仑苏10年抽奖</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<link href="css/animate.min.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+
+
+<style>
+		
+		*{padding: 0;margin: 0;}
+		
+		/*自动缩放以及loading框架*/
+		.swipe-wrap{width: 100%;height: 100%;position: relative;overflow: hidden;}
+		.swipe{position:absolute;width:100%;}
+		.swipe-box{width: 100%;overflow: hidden;}
+		
+		.m_clear{zoom:1;}
+		.m_clear:after{content:"";display:block;clear:both;}
+		.m_porR {position: relative;}
+		.m_porA {position: absolute;}
+		.m_fl {float:left;}
+		.m_fr {float:right;}
+		.m_db {display: block;}
+		.m_dn {display:none;}
+		.m_oh {overflow:hidden;}
+		.m_w100,.m_wrapper,.loadFont {width:100%;}
+		.m_mAuto {margin: 0 auto;}
+		.m_tac {text-align:center;}
+		.m_bgn {background:none;}
+		.m_fs10 {font-size:10px;}
+		.m_fs12 {font-size:12px;}
+		.m_fs14 {font-size:14px;}
+		.m_fs16 {font-size:16px;}
+		.m_fs18 {font-size:18px;}
+		.m_fs22 {font-size:22px;}
+		.m_fw {font-weight:bold;}
+		.cfff {color:#fff;}
+		.m_inpNoBg {-webkit-appearance:none;background:none;}
+		.changeWord { line-height:0;font-size:0; overflow:hidden;color:rgba(255,255,255,0);}
+		
+		/*lufylegend.js样式*/
+		.legend {position:absolute;z-index:2;font-size:0px;}
+		
+		/*loadding样式*/
+		.load {top:30%;left:0;width:100%;}
+		.loadImg {width:20%;margin:0 0 0 40%;}
+	
+		
+		
+		
+		</style>
+
+          <!--<img class="fan" src="images/fan.jpg" width="100%" height="auto" style="margin-top: 30px;" />-->
+</head>
+<body>
+	
+	<!--loading-->
+    <div class="m_porA load">
+	    <div class="loadImg"><img src="images/load.png" width="100%" /></div>
+	    <div class="m_porA m_tac m_fs12 loadFont"><br /><br />加载中...</div>
+	</div>
+	
+	
+
+
+	
+	
+	
+	
+	<!--main-->
+	 <div class="m_wrapper" style="opacity:0;">
+             
+             
+             <!--main-->
+             <div id="body" style="background: none;">
+                
+               <div class="yao bg_yao">
+               	  <img class="yao_icon"  src="images/yao_icon.png" />
+               	  <img class="yql" src="images/yql.png" />
+               </div>
+                
+                <!--空箱子-->
+                <div class="kong" style="display: none;">
+                	<img src="images/hyh.png" class="hyh" />
+                	<img src="images/qd.png"  class="qd" />
+                	<img src="images/fanh_button.png" class="fanh_button" />
+                	
+                </div>
+                
+                <!--基金-->
+                <div class="jj" style="display: none;">
+                	
+                	<img src="images/jpsysm.png"  class="jpsysm" />
+                	
+                	<img src="images/gx_jj.png" class="gx_jj" />
+                	
+                	<img src="images/tx_zjxx.png" class="tx_zjxx" />
+                	
+                </div>
+                
+                
+                <div class="jb" style="display: none;">
+                	<img src="images/jpsysm.png"  class="jpsysm" />
+                	<img src="images/msh_jf.png"  class="msh_jf" />
+                	<img src="images/close_button.png"  class="close_button" />
+                	
+                </div>
+                
+                <img class="hdc_button yao_hdc_button" src="images/close_button.png" />
+                
+                
+             </div>
+ 
+	 </div>
+
+
+
+	<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/yao.js"></script>
+
+	
+	
+</body>
+</html>

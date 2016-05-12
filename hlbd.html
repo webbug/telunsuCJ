@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>特仑苏10年抽奖</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+<link href="css/animate.min.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+
+
+<style>
+		
+		*{padding: 0;margin: 0;}
+		
+		/*自动缩放以及loading框架*/
+		.swipe-wrap{width: 100%;height: 100%;position: relative;overflow: hidden;}
+		.swipe{position:absolute;width:100%;}
+		.swipe-box{width: 100%;overflow: hidden;}
+		
+		.m_clear{zoom:1;}
+		.m_clear:after{content:"";display:block;clear:both;}
+		.m_porR {position: relative;}
+		.m_porA {position: absolute;}
+		.m_fl {float:left;}
+		.m_fr {float:right;}
+		.m_db {display: block;}
+		.m_dn {display:none;}
+		.m_oh {overflow:hidden;}
+		.m_w100,.m_wrapper,.loadFont {width:100%;}
+		.m_mAuto {margin: 0 auto;}
+		.m_tac {text-align:center;}
+		.m_bgn {background:none;}
+		.m_fs10 {font-size:10px;}
+		.m_fs12 {font-size:12px;}
+		.m_fs14 {font-size:14px;}
+		.m_fs16 {font-size:16px;}
+		.m_fs18 {font-size:18px;}
+		.m_fs22 {font-size:22px;}
+		.m_fw {font-weight:bold;}
+		.cfff {color:#fff;}
+		.m_inpNoBg {-webkit-appearance:none;background:none;}
+		.changeWord { line-height:0;font-size:0; overflow:hidden;color:rgba(255,255,255,0);}
+		
+		/*lufylegend.js样式*/
+		.legend {position:absolute;z-index:2;font-size:0px;}
+		
+		/*loadding样式*/
+		.load {top:30%;left:0;width:100%;}
+		.loadImg {width:20%;margin:0 0 0 40%;}
+	
+		/*滚动条样式*/
+		#wrapper {
+			position: absolute;
+			z-index: 1;
+			top: 27%;
+			bottom:15%;
+			left: 9%;
+			width: 82%;
+			overflow: hidden;
+		}
+		
+		@media only screen and (min-width:375px ) {
+			#wrapper{
+				top: 12em;
+				left: 10%;
+			}
+		}
+		
+		#scroller {
+			position: absolute;
+			z-index: 1;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			width: 100%;
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-text-size-adjust: none;
+			-moz-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+			-o-text-size-adjust: none;
+			text-size-adjust: none;
+		}
+		
+		#scroller ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			text-align: left;
+		}
+		
+		#scroller li {
+			padding: 0 10px;
+			height: 40px;
+			line-height: 40px;
+			border-bottom: 1px solid #ccc;
+			border-top: 1px solid #fff;
+			font-size: 14px;
+		}
+
+        .iScrollIndicator{
+           right: -0.1em;
+        }
+		
+		
+		
+		</style>
+
+          <!--<img class="fan" src="images/fan.jpg" width="100%" height="auto" style="margin-top: 30px;" />-->
+</head>
+<body onload="loadedIscrollo()">
+	
+	<!--loading-->
+    <div class="m_porA load">
+	    <div class="loadImg"><img src="images/load.png" width="100%" /></div>
+	    <div class="m_porA m_tac m_fs12 loadFont"><br /><br />加载中...</div>
+	</div>
+	
+	
+
+
+	
+	
+	
+	
+	<!--main-->
+	 <div class="m_wrapper" style="opacity:0;">
+             
+             
+             <!--main-->
+             <div id="body" class="bg_bor">
+                
+               <img class="title_hlbd" src="images/title_hlbd.png" />
+                
+                <div class="date_button"></div>
+                <div class="sj_button"></div>
+                <div class="jp_button"></div>
+                
+                   <div id="wrapper" class="war_hlbd">
+						<div id="scroller">
+							
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+                           <div class="bd_li"><span class="bd_date">8月1日</span><span class="bd_sj">138****2565</span><span class="bd_jp">4999旅游基金</span></div>
+				
+                     	</div>
+					</div>
+                
+               <img class="hlbd_fh" src="images/fanh_button.png" />
+                
+             </div>
+ 
+	 </div>
+
+
+
+	<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script type="text/javascript">
+
+	var myScroll;
+	
+	function loadedIscrollo () {
+		myScroll = new IScroll('#wrapper', {
+			scrollbars: true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true
+		});
+	}
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	
+	</script>
+	
+	<script>
+	
+//	setTimeout(function(){
+//	  	  screenShow();
+//	},1000);
+
+	</script>
+	
+</body>
+</html>
